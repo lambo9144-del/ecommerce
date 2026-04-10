@@ -1,6 +1,7 @@
 <?php include('header.php'); 
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
+    
     $sku=$_POST["sku"];
     $price=$_POST["price"];
     $quantity=$_POST["quantity"];
@@ -46,3 +47,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     </div>
 </div>
 <?php include("footer.php") ?>
+
+<form action="" method="post" enctype="multipart/form-data">
+
+<div class="form-group">
+    <label for="image">Product Image:</label>
+    <input type="file" id="image" name="image" class="form-control">
+</div>
